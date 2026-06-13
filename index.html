@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Kept Secret — Live Log Dashboard</title>
+  <meta name="description" content="GitHub Pages-ready dashboard voor festivalratings, timetable context en live artiestenlog." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Festival memory system · GitHub Pages concept</div>
+        <h1>Best Kept Secret<br/>Live Log Dashboard</h1>
+        <p class="lede">Een strak dashboard voor het bijhouden van welke artiesten je live hebt gezien, hoe je ze scoorde, op welk podium ze stonden, en wat jouw persoonlijke highlights waren — direct bruikbaar als publieke of private GitHub Pages site.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#today">Bekijk vandaag</a>
+          <a class="button ghost" href="#ratings">Bekijk ratings</a>
+        </div>
+      </div>
+      <div class="hero-panel glass">
+        <div class="hero-stat-row">
+          <div>
+            <span class="stat-label">Festival</span>
+            <strong>Best Kept Secret</strong>
+          </div>
+          <div>
+            <span class="stat-label">Vandaag</span>
+            <strong>Vrijdag</strong>
+          </div>
+        </div>
+        <div class="hero-stat-row">
+          <div>
+            <span class="stat-label">Gezien</span>
+            <strong id="seen-count">4 acts</strong>
+          </div>
+          <div>
+            <span class="stat-label">Gemiddelde score</span>
+            <strong id="avg-rating">8.4</strong>
+          </div>
+        </div>
+        <p class="microcopy">Designed for fast festival capture: timetable + rating + notes + proof of what you actually saw.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section info-grid">
+        <article class="info-card glass">
+          <span class="section-tag">Use case</span>
+          <h2>Wat dit oplost</h2>
+          <p>Je bent op een druk festival en wilt later nog weten: wie heb ik gezien, wanneer, op welk podium, wat vond ik ervan, en hoe verhoudt dat zich tot andere jaren?</p>
+        </article>
+        <article class="info-card glass">
+          <span class="section-tag">Workflow</span>
+          <h2>Telegram → JSON → dashboard</h2>
+          <p>Ratings kunnen eerst via Telegram worden ingevoerd. Daarna valideert Hermes artiest, tijdslot en podium, en schrijft alles weg als nette records die dit dashboard leest.</p>
+        </article>
+      </section>
+
+      <section id="today" class="section section-grid">
+        <div class="section-heading">
+          <div>
+            <span class="section-tag">Vandaag</span>
+            <h2>Timetable + context</h2>
+          </div>
+          <div class="weather-pill">☁️ 21°C · Hilvarenbeek · lichte wind</div>
+        </div>
+        <div id="today-grid" class="cards-grid"></div>
+      </section>
+
+      <section id="ratings" class="section section-grid">
+        <div class="section-heading">
+          <div>
+            <span class="section-tag">Jouw mening</span>
+            <h2>Live ratings overzicht</h2>
+          </div>
+          <div class="legend">
+            <span><i class="dot excellent"></i> 9+</span>
+            <span><i class="dot good"></i> 7–8.9</span>
+            <span><i class="dot okay"></i> &lt; 7</span>
+          </div>
+        </div>
+        <div id="ratings-grid" class="ratings-grid"></div>
+      </section>
+
+      <section class="section two-col">
+        <article class="glass summary-panel">
+          <span class="section-tag">Data model</span>
+          <h2>Voorbeeld JSON record</h2>
+          <pre id="json-preview"></pre>
+        </article>
+        <article class="glass summary-panel">
+          <span class="section-tag">Later uitbreiden</span>
+          <h2>Handige velden</h2>
+          <ul class="feature-list">
+            <li>overall rating + subscores</li>
+            <li>stage, time slot, weather, crowd vibe</li>
+            <li>review short + review long</li>
+            <li>proof fields: matched timetable slot + confidence</li>
+            <li>years_seen voor historisch artiestenprofiel</li>
+            <li>filters op jaar, score, genre, podium en festivaldag</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section cta glass">
+        <span class="section-tag">Deployment</span>
+        <h2>GitHub Pages-ready</h2>
+        <p>Deze prototype is volledig statisch: <code>index.html</code>, <code>styles.css</code> en <code>app.js</code>. Dus geschikt om direct op GitHub Pages te publiceren of later te koppelen aan JSON data uit Telegram/Hermes.</p>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
