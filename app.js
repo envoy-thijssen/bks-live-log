@@ -1,70 +1,90 @@
 const todayLineup = [
   {
-    artist: 'WWEO',
+    artist: 'Hiqpy',
+    subtitle: 'Hot-blooded shoegaze/alt-rock sensation',
     stage: 'TWO',
-    slot: '16:30–17:15',
-    weather: 'Licht bewolkt',
+    slot: '13:15–14:00',
+    timestamp: '2026-06-13T13:15:00+02:00',
+    weather: 'Overcast · middag',
     seen: true,
-    note: 'Vroege set met sterke energie; goed voorbeeld van hoe timetable-context en beoordeling samenkomen.'
+    note: 'Amsterdam quartet with scene-stealing stage dramatics and scorching melodies. Logged today at Best Kept Secret 2026.',
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hiqpy'
   },
   {
-    artist: 'Khruangbin',
+    artist: 'Weval (live)',
+    subtitle: 'Tasteful electro-acoustic dream weavers',
+    stage: 'TWO',
+    slot: '14:45–15:45',
+    timestamp: '2026-06-13T14:45:00+02:00',
+    weather: 'Overcast · namiddag',
+    seen: true,
+    note: 'Dutch duo balancing studious tinkering with spontaneous live instrumentation; one of the strongest ratings of the day.',
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/weval-live'
+  },
+  {
+    artist: 'Hayley Williams',
+    subtitle: 'Paramore icon & eclectic pop star',
     stage: 'ONE',
+    slot: '17:45–18:45',
+    timestamp: '2026-06-13T17:45:00+02:00',
+    weather: 'Koele avondstart',
+    seen: true,
+    note: 'Festival page frames her as both Paramore icon and singular solo artist; your score lands this as more mixed than the hype.',
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hayley-williams'
+  },
+  {
+    artist: 'Nation of Language',
+    subtitle: 'New York synth pop torchbearers',
+    stage: 'TWO',
     slot: '18:45–19:45',
-    weather: 'Droog',
+    timestamp: '2026-06-13T18:45:00+02:00',
+    weather: 'Avond · droog bewolkt',
     seen: true,
-    note: 'Publiek zat er volledig in; dit is precies het soort act waarbij sfeer + live-ervaring belangrijk is.'
-  },
-  {
-    artist: 'Jamie xx',
-    stage: 'ONE',
-    slot: '21:30–22:45',
-    weather: 'Zachte avondlucht',
-    seen: false,
-    note: 'Nog op het programma; klaar om later via Telegram als gezien + rating binnen te komen.'
-  },
-  {
-    artist: 'Eefje de Visser',
-    stage: 'TWO',
-    slot: '23:00–23:55',
-    weather: 'Avond',
-    seen: false,
-    note: 'Mooie kandidaat om later te verrijken met korte review, score en persoonlijk hoogtepunt.'
+    note: 'Positioned by BKS as heirs to the Kraftwerk / New Order / LCD Soundsystem continuum. Clean timestamped entry for today.',
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/nation-of-language'
   }
 ];
 
 const ratingLog = [
   {
-    artist: 'WWEO',
-    rating: 8.2,
-    shortReview: 'Sterke live energie, goede spanningsopbouw en verrassend strak.',
+    artist: 'Hiqpy',
+    rating: 6.3,
+    shortReview: 'Redelijk, maar niet een set die echt boven de dag uitstak.',
     stage: 'TWO',
-    slot: '16:30–17:15',
-    fields: ['energie 8.7', 'muzikaliteit 7.8', 'crowd 8.1']
+    slot: '13:15–14:00',
+    timestamp: '2026-06-13T14:00:00+02:00',
+    fields: ['alt-rock', 'shoegaze', 'vandaag'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hiqpy'
   },
   {
-    artist: 'Khruangbin',
-    rating: 9.1,
-    shortReview: 'Super gecontroleerd, hypnotiserend en live nóg beter dan verwacht.',
+    artist: 'Weval (live)',
+    rating: 9.2,
+    shortReview: 'Duidelijke dagtopper: rijk, gecontroleerd en live bijzonder sterk.',
+    stage: 'TWO',
+    slot: '14:45–15:45',
+    timestamp: '2026-06-13T15:45:00+02:00',
+    fields: ['electro-acoustic', 'dreamy', 'dagtopper'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/weval-live'
+  },
+  {
+    artist: 'Hayley Williams',
+    rating: 6.8,
+    shortReview: 'Interessant, maar voor jou duidelijk minder overtuigend dan de status van de naam doet vermoeden.',
     stage: 'ONE',
+    slot: '17:45–18:45',
+    timestamp: '2026-06-13T18:45:00+02:00',
+    fields: ['pop', 'Paramore', 'mixed'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hayley-williams'
+  },
+  {
+    artist: 'Nation of Language',
+    rating: 7.4,
+    shortReview: 'Solide set met duidelijke synth-pop identiteit, maar niet helemaal top-tier voor jou.',
+    stage: 'TWO',
     slot: '18:45–19:45',
-    fields: ['muzikaliteit 9.4', 'sfeer 9.0', 'originaliteit 8.7']
-  },
-  {
-    artist: 'Big Thief',
-    rating: 8.6,
-    shortReview: 'Intiem en sterk, meer emotionele impact dan spektakel.',
-    stage: 'ONE',
-    slot: 'archief 2023',
-    fields: ['songkeuze 8.8', 'vocals 8.7', 'presence 8.3']
-  },
-  {
-    artist: 'Aphex Twin',
-    rating: 7.8,
-    shortReview: 'Visueel en sonisch indrukwekkend, maar minder direct emotioneel dan gehoopt.',
-    stage: 'ONE',
-    slot: 'archief 2024',
-    fields: ['impact 8.8', 'toegankelijkheid 6.5', 'originaliteit 9.3']
+    timestamp: '2026-06-13T19:45:00+02:00',
+    fields: ['synth-pop', 'new wave', 'net positief'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/bands/nation-of-language'
   }
 ];
 
@@ -80,16 +100,23 @@ function renderToday() {
     <article class="artist-card">
       <div class="card-top">
         <div>
-          <span class="section-tag">${item.seen ? 'Gezien' : 'Nog te zien'}</span>
+          <span class="section-tag">${item.seen ? 'Gezien vandaag' : 'Nog te zien'}</span>
           <h3>${item.artist}</h3>
         </div>
         <div class="slot-chip">${item.weather}</div>
       </div>
+      <p><strong>${item.subtitle}</strong></p>
       <div class="meta-row">
         <span class="stage-chip">Podium · ${item.stage}</span>
         <span class="slot-chip">${item.slot}</span>
       </div>
+      <div class="meta-row">
+        <span class="slot-chip">timestamp · ${item.timestamp}</span>
+      </div>
       <p>${item.note}</p>
+      <div class="meta-row">
+        <a class="button ghost" href="${item.sourceUrl}">BKS artist page</a>
+      </div>
     </article>
   `).join('');
 }
@@ -100,15 +127,19 @@ function renderRatings() {
     <article class="rating-card">
       <div class="rating-top">
         <div>
-          <span class="section-tag">Live log</span>
+          <span class="section-tag">Live log · vandaag</span>
           <h3>${item.artist}</h3>
           <p>${item.stage} · ${item.slot}</p>
+          <p>timestamp · ${item.timestamp}</p>
         </div>
         <div class="rating-badge ${ratingClass(item.rating)}">${item.rating.toFixed(1)}</div>
       </div>
       <p>${item.shortReview}</p>
       <div class="chip-row">
         ${item.fields.map(field => `<span class="rating-chip">${field}</span>`).join('')}
+      </div>
+      <div class="meta-row">
+        <a class="button ghost" href="${item.sourceUrl}">bron</a>
       </div>
     </article>
   `).join('');
@@ -121,23 +152,20 @@ function renderSummary() {
   document.getElementById('avg-rating').textContent = avg.toFixed(1);
 
   const sample = {
-    festival: 'Best Kept Secret',
+    festival: 'Best Kept Secret 2026',
     date: '2026-06-13',
-    artist_name: 'Khruangbin',
-    stage: 'ONE',
-    scheduled_start: '18:45',
-    scheduled_end: '19:45',
+    artist_name: 'Weval (live)',
+    stage: 'TWO',
+    scheduled_start: '14:45',
+    scheduled_end: '15:45',
     seen_confirmed: true,
-    rating_overall: 9.1,
-    ratings: {
-      muzikaliteit: 9.4,
-      sfeer: 9.0,
-      originaliteit: 8.7
-    },
-    review_short: 'Super gecontroleerd, hypnotiserend en live nóg beter dan verwacht.',
-    weather: 'Droog, milde avond',
+    rating_overall: 9.2,
+    review_short: 'Duidelijke dagtopper: rijk, gecontroleerd en live bijzonder sterk.',
+    weather: 'Overcast, 16°C, wind 20 km/h',
     source: 'telegram',
     match_confidence: 'high',
+    bks_source_url: 'https://www.bestkeptsecret.nl/bands/weval-live',
+    captured_at: '2026-06-13T15:45:00+02:00',
     years_seen: [2026]
   };
 
