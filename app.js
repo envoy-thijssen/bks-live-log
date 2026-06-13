@@ -47,6 +47,36 @@ const todayLineup = [
 
 const ratingLog = [
   {
+    artist: 'Wolf Alice',
+    rating: 8.4,
+    shortReview: 'Sterke festival-set met genoeg punch en melodie om meteen in de bovenste regionen van je daglijst te landen.',
+    stage: 'Best Kept Secret 2026',
+    slot: 'Zelfde festival · tijd nog aanvullen',
+    timestamp: '2026-06-13T20:30:00+02:00',
+    fields: ['indie rock', 'energiek', 'sterk'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/'
+  },
+  {
+    artist: 'Tramhaus',
+    rating: 7.3,
+    shortReview: 'Goede intensiteit en karakter, maar voor jou net geen absolute uitschieter binnen dezelfde festivaldag.',
+    stage: 'Best Kept Secret 2026',
+    slot: 'Zelfde festival · tijd nog aanvullen',
+    timestamp: '2026-06-13T21:00:00+02:00',
+    fields: ['post-punk', 'urgent', 'goed'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/'
+  },
+  {
+    artist: 'Nick Cave',
+    rating: 7.5,
+    shortReview: 'Zwaar charisma en grote naam, maar in jouw ranking uiteindelijk degelijker dan transcendent.',
+    stage: 'Best Kept Secret 2026',
+    slot: 'Zelfde festival · tijd nog aanvullen',
+    timestamp: '2026-06-13T22:30:00+02:00',
+    fields: ['headliner', 'dark', 'goed'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/'
+  },
+  {
     artist: 'Hiqpy',
     rating: 6.3,
     shortReview: 'Redelijk, maar niet een set die echt boven de dag uitstak.',
@@ -88,6 +118,8 @@ const ratingLog = [
   }
 ];
 
+const sortedRatings = [...ratingLog].sort((a, b) => b.rating - a.rating);
+
 function ratingClass(score) {
   if (score >= 9) return 'excellent';
   if (score >= 7) return 'good';
@@ -121,13 +153,42 @@ function renderToday() {
   `).join('');
 }
 
+function renderSpotlight() {
+  const root = document.getElementById('ratings-spotlight');
+  const top = sortedRatings[0];
+  const bottom = sortedRatings[sortedRatings.length - 1];
+  const average = sortedRatings.reduce((sum, item) => sum + item.rating, 0) / sortedRatings.length;
+
+  root.innerHTML = `
+    <div class="spotlight-copy">
+      <span class="section-tag">Dagbeeld</span>
+      <h3>Cooler snapshot van je festivaldag</h3>
+      <p><strong>${top.artist}</strong> voert nu je ranking aan met <strong>${top.rating.toFixed(1)}</strong>, terwijl <strong>${bottom.artist}</strong> de onderkant markeert op <strong>${bottom.rating.toFixed(1)}</strong>. Gemiddeld zit je op <strong>${average.toFixed(1)}</strong> over ${sortedRatings.length} gelogde sets.</p>
+    </div>
+    <div class="spotlight-metrics">
+      <div>
+        <span class="stat-label">Top pick</span>
+        <strong>${top.artist}</strong>
+      </div>
+      <div>
+        <span class="stat-label">Nieuwe toevoegingen</span>
+        <strong>Wolf Alice · Tramhaus · Nick Cave</strong>
+      </div>
+      <div>
+        <span class="stat-label">Score range</span>
+        <strong>${bottom.rating.toFixed(1)} → ${top.rating.toFixed(1)}</strong>
+      </div>
+    </div>
+  `;
+}
+
 function renderRatings() {
   const root = document.getElementById('ratings-grid');
-  root.innerHTML = ratingLog.map(item => `
-    <article class="rating-card">
+  root.innerHTML = sortedRatings.map((item, index) => `
+    <article class="rating-card ${index === 0 ? 'rating-card-top' : ''}">
       <div class="rating-top">
         <div>
-          <span class="section-tag">Live log · vandaag</span>
+          <span class="section-tag">#${index + 1} · Live log · vandaag</span>
           <h3>${item.artist}</h3>
           <p>${item.stage} · ${item.slot}</p>
           <p>timestamp · ${item.timestamp}</p>
@@ -147,7 +208,7 @@ function renderRatings() {
 
 function renderSummary() {
   const seen = todayLineup.filter(item => item.seen).length;
-  const avg = ratingLog.reduce((sum, item) => sum + item.rating, 0) / ratingLog.length;
+  const avg = sortedRatings.reduce((sum, item) => sum + item.rating, 0) / sortedRatings.length;
   document.getElementById('seen-count').textContent = `${seen} acts`;
   document.getElementById('avg-rating').textContent = avg.toFixed(1);
 
@@ -173,5 +234,6 @@ function renderSummary() {
 }
 
 renderToday();
+renderSpotlight();
 renderRatings();
 renderSummary();
