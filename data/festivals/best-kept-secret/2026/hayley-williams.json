@@ -1,0 +1,80 @@
+{
+  "path": "festivals/best-kept-secret/2026/hayley-williams.json",
+  "id": "best-kept-secret-2026-hayley-williams",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Hayley Williams",
+    "slug": "hayley-williams",
+    "description": "American singer-songwriter best known as Paramore's frontperson, with a solo catalogue that mixes alternative pop, art-rock textures, and diaristic songwriting.",
+    "genres": [
+      "alternative pop",
+      "pop rock",
+      "art pop",
+      "emo pop"
+    ],
+    "lead": "Hayley Williams",
+    "lead_birth_year": 1988,
+    "official_site": "https://www.hayleywilliams.com/",
+    "origin": "Meridian, Mississippi, United States",
+    "vibes": [
+      "restless",
+      "emotional",
+      "bright",
+      "confessional"
+    ],
+    "recognition": "headliner",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/hayley-williams",
+      "https://en.wikipedia.org/wiki/Hayley_Williams",
+      "https://www.hayleywilliams.com/"
+    ]
+  },
+  "performance": {
+    "stage": "ONE",
+    "slot": "17:45–18:45",
+    "timestamp": "2026-06-13T18:45:00+02:00",
+    "seen": true,
+    "rating": 6.8,
+    "review": "Interessant, maar voor jou duidelijk minder overtuigend dan de status van de naam doet vermoeden.",
+    "weather": "Koele avondstart",
+    "tags": [
+      "pop",
+      "Paramore",
+      "mixed"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/hayley-williams",
+    "official_site": "https://www.hayleywilliams.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hayley_Williams"
+  },
+  "sources": [
+    {
+      "type": "wikipedia",
+      "label": "Wikipedia summary",
+      "url": "https://en.wikipedia.org/wiki/Hayley_Williams"
+    },
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/hayley-williams"
+    },
+    {
+      "type": "official-site",
+      "label": "Hayley Williams official site",
+      "url": "https://www.hayleywilliams.com/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

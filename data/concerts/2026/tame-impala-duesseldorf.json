@@ -1,0 +1,82 @@
+{
+  "path": "concerts/2026/tame-impala-duesseldorf.json",
+  "id": "concert-2026-tame-impala-duesseldorf",
+  "type": "concert",
+  "festival_slug": null,
+  "festival_name": null,
+  "year": 2026,
+  "date": "2026-05-01",
+  "city": "Düsseldorf",
+  "country": "Germany",
+  "artist": {
+    "name": "Tame Impala",
+    "slug": "tame-impala",
+    "description": "Kevin Parker's psychedelic project, famous for turning studio maximalism into a live set of liquid grooves, huge low-end, and very expensive-sounding melancholy.",
+    "genres": [
+      "psychedelic rock",
+      "neo-psychedelia",
+      "indie rock",
+      "synth-pop"
+    ],
+    "lead": "Kevin Parker",
+    "lead_birth_year": 1986,
+    "official_site": "https://www.tameimpala.com/",
+    "origin": "Perth, Australia",
+    "vibes": [
+      "trippy",
+      "lush",
+      "euphoric",
+      "melancholic"
+    ],
+    "recognition": "canon",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Tame_Impala",
+      "https://www.tameimpala.com/"
+    ]
+  },
+  "performance": {
+    "stage": "Standalone concert",
+    "venue": "PSD BANK DOME",
+    "doors": "18:00",
+    "start_time": "19:30",
+    "slot": "Doors 18:00 · show 19:30",
+    "timestamp": "2026-05-01T19:30:00+02:00",
+    "seen": true,
+    "rating": 9.7,
+    "review": "Huge psychedelic glow, absurdly immersive sound, and the kind of concert that immediately becomes a benchmark.",
+    "weather": null,
+    "tags": [
+      "psychedelic",
+      "benchmark",
+      "euphoria"
+    ],
+    "day_label": "Friday"
+  },
+  "links": {
+    "official_site": "https://www.tameimpala.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tame_Impala",
+    "venue_page": "https://www.psd-bank-dome.de/event/tame-impala-01-05-2026"
+  },
+  "sources": [
+    {
+      "type": "wikipedia",
+      "label": "Wikipedia summary",
+      "url": "https://en.wikipedia.org/wiki/Tame_Impala"
+    },
+    {
+      "type": "official-site",
+      "label": "Tame Impala official site",
+      "url": "https://www.tameimpala.com/"
+    },
+    {
+      "type": "venue",
+      "label": "PSD BANK DOME event page",
+      "url": "https://www.psd-bank-dome.de/event/tame-impala-01-05-2026"
+    },
+    {
+      "type": "user-input",
+      "label": "User-provided concert metadata",
+      "url": "telegram:current-session"
+    }
+  ]
+}

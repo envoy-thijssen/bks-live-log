@@ -1,0 +1,80 @@
+{
+  "path": "festivals/best-kept-secret/2026/wolf-alice.json",
+  "id": "best-kept-secret-2026-wolf-alice",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Wolf Alice",
+    "slug": "wolf-alice",
+    "description": "London rock band that grew from an acoustic duo into one of the UK's most shape-shifting guitar acts, balancing grunge force, dream-pop drift, and festival-sized choruses.",
+    "genres": [
+      "alternative rock",
+      "indie rock",
+      "dream pop",
+      "grunge"
+    ],
+    "lead": "Ellie Rowsell",
+    "lead_birth_year": 1992,
+    "official_site": "https://www.wolfalice.co.uk/",
+    "origin": "London, England",
+    "vibes": [
+      "feral",
+      "melodic",
+      "surging",
+      "wistful"
+    ],
+    "recognition": "headliner",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/wolf-alice",
+      "https://en.wikipedia.org/wiki/Wolf_Alice",
+      "https://www.wolfalice.co.uk/"
+    ]
+  },
+  "performance": {
+    "stage": "Best Kept Secret 2026",
+    "slot": "Zelfde festival · tijd nog aanvullen",
+    "timestamp": "2026-06-13T20:30:00+02:00",
+    "seen": true,
+    "rating": 8.4,
+    "review": "Sterke festival-set met genoeg punch en melodie om meteen in de bovenste regionen van je daglijst te landen.",
+    "weather": "Prime-time evening",
+    "tags": [
+      "indie rock",
+      "energiek",
+      "sterk"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/wolf-alice",
+    "official_site": "https://www.wolfalice.co.uk/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wolf_Alice"
+  },
+  "sources": [
+    {
+      "type": "wikipedia",
+      "label": "Wikipedia summary",
+      "url": "https://en.wikipedia.org/wiki/Wolf_Alice"
+    },
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/wolf-alice"
+    },
+    {
+      "type": "official-site",
+      "label": "Wolf Alice official site",
+      "url": "https://www.wolfalice.co.uk/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

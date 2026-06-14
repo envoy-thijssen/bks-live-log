@@ -1,0 +1,80 @@
+{
+  "path": "festivals/best-kept-secret/2026/nation-of-language.json",
+  "id": "best-kept-secret-2026-nation-of-language",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Nation of Language",
+    "slug": "nation-of-language",
+    "description": "Brooklyn trio mining the romantic end of synth-pop and minimal wave, usually built around Ian Devaney's melancholic vocals and clean analogue hooks.",
+    "genres": [
+      "synth-pop",
+      "new wave",
+      "indie pop",
+      "minimal wave"
+    ],
+    "lead": "Ian Devaney",
+    "lead_birth_year": null,
+    "official_site": "https://www.nationoflanguage.com/",
+    "origin": "Brooklyn, New York, United States",
+    "vibes": [
+      "melancholic",
+      "cool",
+      "romantic",
+      "nostalgic"
+    ],
+    "recognition": "cult",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/nation-of-language",
+      "https://en.wikipedia.org/wiki/Nation_of_Language",
+      "https://www.nationoflanguage.com/"
+    ]
+  },
+  "performance": {
+    "stage": "TWO",
+    "slot": "18:45–19:45",
+    "timestamp": "2026-06-13T19:45:00+02:00",
+    "seen": true,
+    "rating": 7.4,
+    "review": "Solide set met duidelijke synth-pop identiteit, maar niet helemaal top-tier voor jou.",
+    "weather": "Avond · droog bewolkt",
+    "tags": [
+      "synth-pop",
+      "new wave",
+      "net positief"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/nation-of-language",
+    "official_site": "https://www.nationoflanguage.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nation_of_Language"
+  },
+  "sources": [
+    {
+      "type": "wikipedia",
+      "label": "Wikipedia summary",
+      "url": "https://en.wikipedia.org/wiki/Nation_of_Language"
+    },
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/nation-of-language"
+    },
+    {
+      "type": "official-site",
+      "label": "Nation of Language official site",
+      "url": "https://www.nationoflanguage.com/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "path": "festivals/best-kept-secret/2026/hiqpy.json",
+  "id": "best-kept-secret-2026-hiqpy",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Hiqpy",
+    "slug": "hiqpy",
+    "description": "Amsterdam indie rock band with a nervy shoegaze-and-post-punk edge; their official bio foregrounds a breakout Popronde 2023 run and a reputation for increasingly intense live shows.",
+    "genres": [
+      "indie rock",
+      "shoegaze",
+      "post-punk",
+      "alternative rock"
+    ],
+    "lead": "Abir Hamam",
+    "lead_birth_year": null,
+    "official_site": "https://hiqpy.com/",
+    "origin": "Amsterdam, Netherlands",
+    "vibes": [
+      "tense",
+      "urgent",
+      "cathartic",
+      "brooding"
+    ],
+    "recognition": "rising",
+    "source_urls": [
+      "https://hiqpy.com/",
+      "https://www.bestkeptsecret.nl/bands/hiqpy"
+    ]
+  },
+  "performance": {
+    "stage": "TWO",
+    "slot": "13:15–14:00",
+    "timestamp": "2026-06-13T14:00:00+02:00",
+    "seen": true,
+    "rating": 6.3,
+    "review": "Redelijk, maar niet een set die echt boven de dag uitstak.",
+    "weather": "Overcast · middag",
+    "tags": [
+      "alt-rock",
+      "shoegaze",
+      "vandaag"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/hiqpy",
+    "official_site": "https://hiqpy.com/"
+  },
+  "sources": [
+    {
+      "type": "official-site",
+      "label": "Hiqpy official site",
+      "url": "https://hiqpy.com/"
+    },
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/hiqpy"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

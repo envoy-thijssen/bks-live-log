@@ -1,0 +1,66 @@
+{
+  "path": "festivals/best-kept-secret/2026/job-jobse.json",
+  "id": "best-kept-secret-2026-job-jobse",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Job Jobse",
+    "slug": "job-jobse",
+    "description": "Amsterdam DJ with a reputation for marathon, high-emotion house and trance sets that move from playful left turns into total hands-in-the-air release.",
+    "genres": [
+      "house",
+      "trance",
+      "electronic",
+      "club"
+    ],
+    "lead": "Job Jobse",
+    "lead_birth_year": null,
+    "official_site": null,
+    "origin": "Amsterdam, Netherlands",
+    "vibes": [
+      "euphoric",
+      "playful",
+      "ecstatic",
+      "communal"
+    ],
+    "recognition": "cult",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/job-jobse"
+    ]
+  },
+  "performance": {
+    "stage": "Best Kept Secret 2026",
+    "slot": "Zelfde festival · tijd nog aanvullen",
+    "timestamp": "2026-06-13T23:30:00+02:00",
+    "seen": true,
+    "rating": 9.7,
+    "review": "Absurd sterke set: totale controle, euforie en meteen de onbetwiste nieuwe dag- en festivaltopper.",
+    "weather": "Late night festival close",
+    "tags": [
+      "dj set",
+      "euforie",
+      "absolute topper"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/job-jobse"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/job-jobse"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

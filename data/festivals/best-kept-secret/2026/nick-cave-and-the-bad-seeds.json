@@ -1,0 +1,80 @@
+{
+  "path": "festivals/best-kept-secret/2026/nick-cave-and-the-bad-seeds.json",
+  "id": "best-kept-secret-2026-nick-cave-and-the-bad-seeds",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Nick Cave & The Bad Seeds",
+    "slug": "nick-cave-and-the-bad-seeds",
+    "description": "Long-running Australian rock institution mixing gothic blues, scripture-grade melodrama, and slow-burning emotional grandeur around Nick Cave's towering presence.",
+    "genres": [
+      "art rock",
+      "post-punk",
+      "gothic rock",
+      "alternative rock"
+    ],
+    "lead": "Nick Cave",
+    "lead_birth_year": 1957,
+    "official_site": "https://www.nickcave.com/",
+    "origin": "Melbourne, Australia",
+    "vibes": [
+      "dark",
+      "grave",
+      "intense",
+      "majestic"
+    ],
+    "recognition": "canon",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/nick-cave-the-bad-seeds",
+      "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds",
+      "https://www.nickcave.com/"
+    ]
+  },
+  "performance": {
+    "stage": "Best Kept Secret 2026",
+    "slot": "Zelfde festival · tijd nog aanvullen",
+    "timestamp": "2026-06-13T22:30:00+02:00",
+    "seen": true,
+    "rating": 7.5,
+    "review": "Zwaar charisma en grote naam, maar in jouw ranking uiteindelijk degelijker dan transcendent.",
+    "weather": "Headliner night air",
+    "tags": [
+      "headliner",
+      "dark",
+      "goed"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/nick-cave-the-bad-seeds",
+    "official_site": "https://www.nickcave.com/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds"
+  },
+  "sources": [
+    {
+      "type": "wikipedia",
+      "label": "Wikipedia summary",
+      "url": "https://en.wikipedia.org/wiki/Nick_Cave_and_the_Bad_Seeds"
+    },
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/nick-cave-the-bad-seeds"
+    },
+    {
+      "type": "official-site",
+      "label": "Nick Cave official site",
+      "url": "https://www.nickcave.com/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

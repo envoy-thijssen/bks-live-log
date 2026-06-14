@@ -1,134 +1,7 @@
-const todayLineup = [
-  {
-    artist: 'Hiqpy',
-    subtitle: 'Hot-blooded shoegaze/alt-rock sensation',
-    stage: 'TWO',
-    slot: '13:15–14:00',
-    timestamp: '2026-06-13T13:15:00+02:00',
-    weather: 'Overcast · middag',
-    seen: true,
-    note: 'Amsterdam quartet with scene-stealing stage dramatics and scorching melodies. Logged today at Best Kept Secret 2026.',
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hiqpy'
-  },
-  {
-    artist: 'Weval (live)',
-    subtitle: 'Tasteful electro-acoustic dream weavers',
-    stage: 'TWO',
-    slot: '14:45–15:45',
-    timestamp: '2026-06-13T14:45:00+02:00',
-    weather: 'Overcast · namiddag',
-    seen: true,
-    note: 'Dutch duo balancing studious tinkering with spontaneous live instrumentation; one of the strongest ratings of the day.',
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/weval-live'
-  },
-  {
-    artist: 'Hayley Williams',
-    subtitle: 'Paramore icon & eclectic pop star',
-    stage: 'ONE',
-    slot: '17:45–18:45',
-    timestamp: '2026-06-13T17:45:00+02:00',
-    weather: 'Koele avondstart',
-    seen: true,
-    note: 'Festival page frames her as both Paramore icon and singular solo artist; your score lands this as more mixed than the hype.',
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hayley-williams'
-  },
-  {
-    artist: 'Nation of Language',
-    subtitle: 'New York synth pop torchbearers',
-    stage: 'TWO',
-    slot: '18:45–19:45',
-    timestamp: '2026-06-13T18:45:00+02:00',
-    weather: 'Avond · droog bewolkt',
-    seen: true,
-    note: 'Positioned by BKS as heirs to the Kraftwerk / New Order / LCD Soundsystem continuum. Clean timestamped entry for today.',
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/nation-of-language'
-  }
-];
-
-const ratingLog = [
-  {
-    artist: 'Job Jobse',
-    rating: 9.7,
-    shortReview: 'Absurd sterke set: totale controle, euforie en meteen de onbetwiste nieuwe dag- en festivaltopper.',
-    stage: 'Best Kept Secret 2026',
-    slot: 'Zelfde festival · tijd nog aanvullen',
-    timestamp: '2026-06-13T23:30:00+02:00',
-    fields: ['dj set', 'euforie', 'absolute topper'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/'
-  },
-  {
-    artist: 'Wolf Alice',
-    rating: 8.4,
-    shortReview: 'Sterke festival-set met genoeg punch en melodie om meteen in de bovenste regionen van je daglijst te landen.',
-    stage: 'Best Kept Secret 2026',
-    slot: 'Zelfde festival · tijd nog aanvullen',
-    timestamp: '2026-06-13T20:30:00+02:00',
-    fields: ['indie rock', 'energiek', 'sterk'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/'
-  },
-  {
-    artist: 'Tramhaus',
-    rating: 7.3,
-    shortReview: 'Goede intensiteit en karakter, maar voor jou net geen absolute uitschieter binnen dezelfde festivaldag.',
-    stage: 'Best Kept Secret 2026',
-    slot: 'Zelfde festival · tijd nog aanvullen',
-    timestamp: '2026-06-13T21:00:00+02:00',
-    fields: ['post-punk', 'urgent', 'goed'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/'
-  },
-  {
-    artist: 'Nick Cave',
-    rating: 7.5,
-    shortReview: 'Zwaar charisma en grote naam, maar in jouw ranking uiteindelijk degelijker dan transcendent.',
-    stage: 'Best Kept Secret 2026',
-    slot: 'Zelfde festival · tijd nog aanvullen',
-    timestamp: '2026-06-13T22:30:00+02:00',
-    fields: ['headliner', 'dark', 'goed'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/'
-  },
-  {
-    artist: 'Hiqpy',
-    rating: 6.3,
-    shortReview: 'Redelijk, maar niet een set die echt boven de dag uitstak.',
-    stage: 'TWO',
-    slot: '13:15–14:00',
-    timestamp: '2026-06-13T14:00:00+02:00',
-    fields: ['alt-rock', 'shoegaze', 'vandaag'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hiqpy'
-  },
-  {
-    artist: 'Weval (live)',
-    rating: 9.2,
-    shortReview: 'Duidelijke dagtopper: rijk, gecontroleerd en live bijzonder sterk.',
-    stage: 'TWO',
-    slot: '14:45–15:45',
-    timestamp: '2026-06-13T15:45:00+02:00',
-    fields: ['electro-acoustic', 'dreamy', 'dagtopper'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/weval-live'
-  },
-  {
-    artist: 'Hayley Williams',
-    rating: 6.8,
-    shortReview: 'Interessant, maar voor jou duidelijk minder overtuigend dan de status van de naam doet vermoeden.',
-    stage: 'ONE',
-    slot: '17:45–18:45',
-    timestamp: '2026-06-13T18:45:00+02:00',
-    fields: ['pop', 'Paramore', 'mixed'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/hayley-williams'
-  },
-  {
-    artist: 'Nation of Language',
-    rating: 7.4,
-    shortReview: 'Solide set met duidelijke synth-pop identiteit, maar niet helemaal top-tier voor jou.',
-    stage: 'TWO',
-    slot: '18:45–19:45',
-    timestamp: '2026-06-13T19:45:00+02:00',
-    fields: ['synth-pop', 'new wave', 'net positief'],
-    sourceUrl: 'https://www.bestkeptsecret.nl/bands/nation-of-language'
-  }
-];
-
-const sortedRatings = [...ratingLog].sort((a, b) => b.rating - a.rating);
+function average(items) {
+  if (!items.length) return 0;
+  return items.reduce((sum, value) => sum + value, 0) / items.length;
+}
 
 function ratingClass(score) {
   if (score >= 9) return 'excellent';
@@ -136,114 +9,244 @@ function ratingClass(score) {
   return 'okay';
 }
 
-function renderToday() {
-  const root = document.getElementById('today-grid');
-  root.innerHTML = todayLineup.map(item => `
+function formatRecordLabel(record) {
+  if (record.type === 'festival') {
+    return `${record.festival_name} · ${record.city}`;
+  }
+  return `Concert · ${record.city}`;
+}
+
+function groupAverages(records, valuesForRecord) {
+  const buckets = new Map();
+  records.forEach(record => {
+    valuesForRecord(record).forEach(key => {
+      if (!key) return;
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key).push(record.performance.rating);
+    });
+  });
+
+  return [...buckets.entries()]
+    .map(([label, ratings]) => ({ label, count: ratings.length, avg: average(ratings) }))
+    .sort((a, b) => b.avg - a.avg || b.count - a.count || a.label.localeCompare(b.label));
+}
+
+function renderHero(records) {
+  const ratings = records.map(record => record.performance.rating);
+  const top = [...records].sort((a, b) => b.performance.rating - a.performance.rating)[0];
+  const cities = new Set(records.map(record => record.city));
+
+  document.getElementById('hero-record-count').textContent = records.length;
+  document.getElementById('hero-average-rating').textContent = average(ratings).toFixed(1);
+  document.getElementById('hero-city-count').textContent = cities.size;
+  document.getElementById('hero-top-score').textContent = `${top.performance.rating.toFixed(1)} · ${top.artist.name}`;
+  document.getElementById('hero-microcopy').textContent = `Top of the archive right now: ${top.artist.name} in ${top.city}. ${records.filter(r => r.type === 'festival').length} festival logs and ${records.filter(r => r.type === 'concert').length} standalone concert log${records.filter(r => r.type === 'concert').length === 1 ? '' : 's'}.`;
+}
+
+function renderFestival(records) {
+  const festivalRecords = records.filter(record => record.type === 'festival');
+  const latestFestival = [...festivalRecords].sort((a, b) => b.performance.timestamp.localeCompare(a.performance.timestamp))[0];
+  const key = `${latestFestival.festival_slug}-${latestFestival.year}`;
+  const selected = festivalRecords.filter(record => `${record.festival_slug}-${record.year}` === key)
+    .sort((a, b) => a.performance.timestamp.localeCompare(b.performance.timestamp));
+
+  document.getElementById('festival-heading').textContent = `${latestFestival.festival_name} ${latestFestival.year}`;
+  document.getElementById('festival-summary-pill').textContent = `${selected.length} seen · ${average(selected.map(item => item.performance.rating)).toFixed(1)} avg · ${selected[0].city}`;
+
+  document.getElementById('festival-grid').innerHTML = selected.map(record => `
     <article class="artist-card">
       <div class="card-top">
         <div>
-          <span class="section-tag">${item.seen ? 'Gezien vandaag' : 'Nog te zien'}</span>
-          <h3>${item.artist}</h3>
+          <span class="section-tag">${record.performance.seen ? 'Seen' : 'Planned'}</span>
+          <h3>${record.artist.name}</h3>
         </div>
-        <div class="slot-chip">${item.weather}</div>
+        <div class="slot-chip">${record.performance.rating.toFixed(1)}</div>
       </div>
-      <p><strong>${item.subtitle}</strong></p>
+      <p><strong>${record.artist.description}</strong></p>
       <div class="meta-row">
-        <span class="stage-chip">Podium · ${item.stage}</span>
-        <span class="slot-chip">${item.slot}</span>
+        <span class="stage-chip">${record.performance.stage}</span>
+        <span class="slot-chip">${record.performance.slot}</span>
       </div>
       <div class="meta-row">
-        <span class="slot-chip">timestamp · ${item.timestamp}</span>
+        <span class="slot-chip">${record.artist.origin}</span>
+        <span class="slot-chip">${record.artist.recognition}</span>
       </div>
-      <p>${item.note}</p>
+      <div class="chip-row">
+        ${record.artist.genres.map(genre => `<span class="rating-chip">${genre}</span>`).join('')}
+      </div>
+      <div class="chip-row">
+        ${record.artist.vibes.map(vibe => `<span class="rating-chip vibe-chip">${vibe}</span>`).join('')}
+      </div>
+      <p>${record.performance.review}</p>
       <div class="meta-row">
-        <a class="button ghost" href="${item.sourceUrl}">BKS artist page</a>
+        ${record.links.festival_page ? `<a class="button ghost" href="${record.links.festival_page}">Festival page</a>` : ''}
+        ${record.links.official_site ? `<a class="button ghost" href="${record.links.official_site}">Official site</a>` : ''}
       </div>
     </article>
   `).join('');
 }
 
-function renderSpotlight() {
-  const root = document.getElementById('ratings-spotlight');
-  const top = sortedRatings[0];
-  const bottom = sortedRatings[sortedRatings.length - 1];
-  const average = sortedRatings.reduce((sum, item) => sum + item.rating, 0) / sortedRatings.length;
+function renderSpotlight(records) {
+  const sorted = [...records].sort((a, b) => b.performance.rating - a.performance.rating);
+  const top = sorted[0];
+  const bottom = sorted[sorted.length - 1];
+  const canon = records.filter(record => ['canon', 'headliner'].includes(record.artist.recognition)).map(record => record.performance.rating);
+  const discoveries = records.filter(record => ['cult', 'rising'].includes(record.artist.recognition)).map(record => record.performance.rating);
 
-  root.innerHTML = `
+  document.getElementById('ratings-spotlight').innerHTML = `
     <div class="spotlight-copy">
-      <span class="section-tag">Dagbeeld</span>
-      <h3>Cooler snapshot van je festivaldag</h3>
-      <p><strong>${top.artist}</strong> voert nu je ranking aan met <strong>${top.rating.toFixed(1)}</strong>, terwijl <strong>${bottom.artist}</strong> de onderkant markeert op <strong>${bottom.rating.toFixed(1)}</strong>. Gemiddeld zit je op <strong>${average.toFixed(1)}</strong> over ${sortedRatings.length} gelogde sets.</p>
+      <span class="section-tag">Archive pulse</span>
+      <h3>Your personal canon is still being negotiated live</h3>
+      <p><strong>${top.artist.name}</strong> currently shares the top spot at <strong>${top.performance.rating.toFixed(1)}</strong>, while <strong>${bottom.artist.name}</strong> sits at the bottom on <strong>${bottom.performance.rating.toFixed(1)}</strong>. Across ${records.length} performances, your overall average is <strong>${average(records.map(item => item.performance.rating)).toFixed(1)}</strong>.</p>
     </div>
     <div class="spotlight-metrics">
       <div>
-        <span class="stat-label">Top pick</span>
-        <strong>${top.artist}</strong>
+        <span class="stat-label">Top tier</span>
+        <strong>${sorted.filter(item => item.performance.rating >= 9).map(item => item.artist.name).join(' · ')}</strong>
       </div>
       <div>
-        <span class="stat-label">Nieuwe toevoegingen</span>
-        <strong>Wolf Alice · Tramhaus · Nick Cave</strong>
+        <span class="stat-label">Recognition tax</span>
+        <strong>${average(discoveries).toFixed(1)} discovery vs ${average(canon).toFixed(1)} canon</strong>
       </div>
       <div>
-        <span class="stat-label">Score range</span>
-        <strong>${bottom.rating.toFixed(1)} → ${top.rating.toFixed(1)}</strong>
+        <span class="stat-label">Spread</span>
+        <strong>${bottom.performance.rating.toFixed(1)} → ${top.performance.rating.toFixed(1)}</strong>
       </div>
     </div>
   `;
 }
 
-function renderRatings() {
-  const root = document.getElementById('ratings-grid');
-  root.innerHTML = sortedRatings.map((item, index) => `
-    <article class="rating-card ${index === 0 ? 'rating-card-top' : ''}">
+function renderArchive(records) {
+  const sorted = [...records].sort((a, b) => b.performance.timestamp.localeCompare(a.performance.timestamp));
+
+  document.getElementById('ratings-grid').innerHTML = sorted.map((record, index) => `
+    <article class="rating-card ${index < 2 ? 'rating-card-top' : ''}">
       <div class="rating-top">
         <div>
-          <span class="section-tag">#${index + 1} · Live log · vandaag</span>
-          <h3>${item.artist}</h3>
-          <p>${item.stage} · ${item.slot}</p>
-          <p>timestamp · ${item.timestamp}</p>
+          <span class="section-tag">#${index + 1} · ${record.type}</span>
+          <h3>${record.artist.name}</h3>
+          <p>${formatRecordLabel(record)} · ${record.date}</p>
+          <p>${record.performance.stage} · ${record.performance.slot}</p>
         </div>
-        <div class="rating-badge ${ratingClass(item.rating)}">${item.rating.toFixed(1)}</div>
+        <div class="rating-badge ${ratingClass(record.performance.rating)}">${record.performance.rating.toFixed(1)}</div>
       </div>
-      <p>${item.shortReview}</p>
+      <p>${record.performance.review}</p>
+      <div class="meta-stack">
+        <div><strong>Lead:</strong> ${record.artist.lead}${record.artist.lead_birth_year ? ` (${record.artist.lead_birth_year})` : ''}</div>
+        <div><strong>Origin:</strong> ${record.artist.origin}</div>
+      </div>
       <div class="chip-row">
-        ${item.fields.map(field => `<span class="rating-chip">${field}</span>`).join('')}
+        ${record.artist.genres.map(field => `<span class="rating-chip">${field}</span>`).join('')}
+      </div>
+      <div class="chip-row">
+        ${record.artist.vibes.map(field => `<span class="rating-chip vibe-chip">${field}</span>`).join('')}
       </div>
       <div class="meta-row">
-        <a class="button ghost" href="${item.sourceUrl}">bron</a>
+        ${record.links.official_site ? `<a class="button ghost" href="${record.links.official_site}">official</a>` : ''}
+        ${record.links.wikipedia ? `<a class="button ghost" href="${record.links.wikipedia}">wiki</a>` : ''}
+        ${record.links.festival_page ? `<a class="button ghost" href="${record.links.festival_page}">festival</a>` : ''}
       </div>
     </article>
   `).join('');
 }
 
-function renderSummary() {
-  const seen = todayLineup.filter(item => item.seen).length;
-  const avg = sortedRatings.reduce((sum, item) => sum + item.rating, 0) / sortedRatings.length;
-  document.getElementById('seen-count').textContent = `${seen} acts`;
-  document.getElementById('avg-rating').textContent = avg.toFixed(1);
-
-  const sample = {
-    festival: 'Best Kept Secret 2026',
-    date: '2026-06-13',
-    artist_name: 'Weval (live)',
-    stage: 'TWO',
-    scheduled_start: '14:45',
-    scheduled_end: '15:45',
-    seen_confirmed: true,
-    rating_overall: 9.2,
-    review_short: 'Duidelijke dagtopper: rijk, gecontroleerd en live bijzonder sterk.',
-    weather: 'Overcast, 16°C, wind 20 km/h',
-    source: 'telegram',
-    match_confidence: 'high',
-    bks_source_url: 'https://www.bestkeptsecret.nl/bands/weval-live',
-    captured_at: '2026-06-13T15:45:00+02:00',
-    years_seen: [2026]
-  };
-
-  document.getElementById('json-preview').textContent = JSON.stringify(sample, null, 2);
+function renderMiniList(targetId, items, formatter) {
+  document.getElementById(targetId).innerHTML = items.map(formatter).join('');
 }
 
-renderToday();
-renderSpotlight();
-renderRatings();
-renderSummary();
+function renderStats(records) {
+  const genres = groupAverages(records, record => record.artist.genres).slice(0, 6);
+  const vibes = groupAverages(records, record => record.artist.vibes).slice(0, 6);
+  const recognition = groupAverages(records, record => [record.artist.recognition]);
+  const cities = groupAverages(records, record => [record.city]);
+
+  const generationBuckets = {};
+  records.forEach(record => {
+    const year = record.artist.lead_birth_year;
+    const label = year ? `${Math.floor(year / 10) * 10}s` : 'unknown';
+    generationBuckets[label] = generationBuckets[label] || [];
+    generationBuckets[label].push(record.performance.rating);
+  });
+  const generations = Object.entries(generationBuckets)
+    .map(([label, ratings]) => ({ label, count: ratings.length, avg: average(ratings) }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  const contrarian = [...records]
+    .sort((a, b) => {
+      const obscureA = ['cult', 'rising'].includes(a.artist.recognition) ? 1 : 0;
+      const obscureB = ['cult', 'rising'].includes(b.artist.recognition) ? 1 : 0;
+      return (b.performance.rating + obscureB) - (a.performance.rating + obscureA);
+    })
+    .slice(0, 5);
+
+  renderMiniList('genre-leaderboard', genres, item => `
+    <div class="mini-list-item">
+      <strong>${item.label}</strong>
+      <span>${item.avg.toFixed(1)} avg · ${item.count} log${item.count === 1 ? '' : 's'}</span>
+    </div>
+  `);
+
+  renderMiniList('vibe-leaderboard', vibes, item => `
+    <div class="mini-list-item">
+      <strong>${item.label}</strong>
+      <span>${item.avg.toFixed(1)} avg · ${item.count} appearance${item.count === 1 ? '' : 's'}</span>
+    </div>
+  `);
+
+  renderMiniList('recognition-breakdown', recognition, item => `
+    <div class="mini-list-item">
+      <strong>${item.label}</strong>
+      <span>${item.avg.toFixed(1)} avg · ${item.count} record${item.count === 1 ? '' : 's'}</span>
+    </div>
+  `);
+
+  renderMiniList('city-breakdown', cities, item => `
+    <div class="mini-list-item">
+      <strong>${item.label}</strong>
+      <span>${item.avg.toFixed(1)} avg · ${item.count} performance${item.count === 1 ? '' : 's'}</span>
+    </div>
+  `);
+
+  renderMiniList('generation-breakdown', generations, item => `
+    <div class="mini-list-item">
+      <strong>${item.label}</strong>
+      <span>${item.avg.toFixed(1)} avg · ${item.count} lead${item.count === 1 ? '' : 's'}</span>
+    </div>
+  `);
+
+  renderMiniList('contrarian-picks', contrarian, record => `
+    <div class="mini-list-item">
+      <strong>${record.artist.name}</strong>
+      <span>${record.performance.rating.toFixed(1)} · ${record.artist.recognition} · ${record.artist.genres[0]}</span>
+    </div>
+  `);
+}
+
+function renderJsonPreview(records) {
+  document.getElementById('json-preview').textContent = JSON.stringify(records[0], null, 2);
+}
+
+async function loadArchive() {
+  const manifest = await fetch('data/index.json').then(response => response.json());
+  const records = await Promise.all(
+    manifest.records.map(entry => fetch(`data/${entry.path}`).then(response => response.json()))
+  );
+  return records;
+}
+
+async function main() {
+  try {
+    const records = await loadArchive();
+    renderHero(records);
+    renderFestival(records);
+    renderSpotlight(records);
+    renderArchive(records);
+    renderStats(records);
+    renderJsonPreview(records);
+  } catch (error) {
+    console.error(error);
+    document.getElementById('hero-microcopy').textContent = 'Could not load archive data. Check data/index.json and static hosting paths.';
+  }
+}
+
+main();

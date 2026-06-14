@@ -1,0 +1,72 @@
+{
+  "path": "festivals/best-kept-secret/2026/tramhaus.json",
+  "id": "best-kept-secret-2026-tramhaus",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Tramhaus",
+    "slug": "tramhaus",
+    "description": "Rotterdam post-punk band built for velocity: wiry guitars, barked vocals, and the kind of live intensity that turns every song into a small riot.",
+    "genres": [
+      "post-punk",
+      "art punk",
+      "indie rock"
+    ],
+    "lead": "Lukas Jansen",
+    "lead_birth_year": null,
+    "official_site": "https://www.tramhaus.com/",
+    "origin": "Rotterdam, Netherlands",
+    "vibes": [
+      "urgent",
+      "chaotic",
+      "wired",
+      "sweaty"
+    ],
+    "recognition": "rising",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/tramhaus",
+      "https://www.tramhaus.com/"
+    ]
+  },
+  "performance": {
+    "stage": "Best Kept Secret 2026",
+    "slot": "Zelfde festival · tijd nog aanvullen",
+    "timestamp": "2026-06-13T21:00:00+02:00",
+    "seen": true,
+    "rating": 7.3,
+    "review": "Goede intensiteit en karakter, maar voor jou net geen absolute uitschieter binnen dezelfde festivaldag.",
+    "weather": "Evening rush",
+    "tags": [
+      "post-punk",
+      "urgent",
+      "goed"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/tramhaus",
+    "official_site": "https://www.tramhaus.com/"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/tramhaus"
+    },
+    {
+      "type": "official-site",
+      "label": "Tramhaus official site",
+      "url": "https://www.tramhaus.com/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

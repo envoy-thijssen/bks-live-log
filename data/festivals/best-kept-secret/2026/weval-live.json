@@ -1,0 +1,73 @@
+{
+  "path": "festivals/best-kept-secret/2026/weval-live.json",
+  "id": "best-kept-secret-2026-weval-live",
+  "type": "festival",
+  "festival_slug": "best-kept-secret",
+  "festival_name": "Best Kept Secret",
+  "year": 2026,
+  "date": "2026-06-13",
+  "city": "Hilvarenbeek",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Weval (live)",
+    "slug": "weval-live",
+    "description": "Dutch electronic duo known for turning detailed studio sound design into an elastic live show with live drums, synths, and moody melodic builds.",
+    "genres": [
+      "electronic",
+      "indietronica",
+      "downtempo",
+      "house"
+    ],
+    "lead": "Harm Coolen & Merijn Scholte Albers",
+    "lead_birth_year": null,
+    "official_site": "https://weval.bandcamp.com/",
+    "origin": "Amsterdam, Netherlands",
+    "vibes": [
+      "dreamy",
+      "hypnotic",
+      "warm",
+      "euphoric"
+    ],
+    "recognition": "cult",
+    "source_urls": [
+      "https://www.bestkeptsecret.nl/bands/weval-live",
+      "https://weval.bandcamp.com/"
+    ]
+  },
+  "performance": {
+    "stage": "TWO",
+    "slot": "14:45–15:45",
+    "timestamp": "2026-06-13T15:45:00+02:00",
+    "seen": true,
+    "rating": 9.2,
+    "review": "Duidelijke dagtopper: rijk, gecontroleerd en live bijzonder sterk.",
+    "weather": "Overcast · namiddag",
+    "tags": [
+      "electro-acoustic",
+      "dreamy",
+      "dagtopper"
+    ],
+    "day_label": "Saturday"
+  },
+  "links": {
+    "festival_page": "https://www.bestkeptsecret.nl/bands/weval-live",
+    "official_site": "https://weval.bandcamp.com/"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Best Kept Secret artist page",
+      "url": "https://www.bestkeptsecret.nl/bands/weval-live"
+    },
+    {
+      "type": "official-site",
+      "label": "Weval Bandcamp",
+      "url": "https://weval.bandcamp.com/"
+    },
+    {
+      "type": "repo-legacy",
+      "label": "Original app.js seed data",
+      "url": "local:app.js"
+    }
+  ]
+}

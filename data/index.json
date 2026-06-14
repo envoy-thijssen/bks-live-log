@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-06-14T22:30:00+02:00",
+  "record_count": 9,
+  "festival_count": 1,
+  "city_count": 2,
+  "average_rating": 8.03,
+  "records": [
+    {
+      "id": "best-kept-secret-2026-job-jobse",
+      "path": "festivals/best-kept-secret/2026/job-jobse.json",
+      "artist": "Job Jobse",
+      "date": "2026-06-13",
+      "rating": 9.7,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-nick-cave-and-the-bad-seeds",
+      "path": "festivals/best-kept-secret/2026/nick-cave-and-the-bad-seeds.json",
+      "artist": "Nick Cave & The Bad Seeds",
+      "date": "2026-06-13",
+      "rating": 7.5,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-tramhaus",
+      "path": "festivals/best-kept-secret/2026/tramhaus.json",
+      "artist": "Tramhaus",
+      "date": "2026-06-13",
+      "rating": 7.3,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-wolf-alice",
+      "path": "festivals/best-kept-secret/2026/wolf-alice.json",
+      "artist": "Wolf Alice",
+      "date": "2026-06-13",
+      "rating": 8.4,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-nation-of-language",
+      "path": "festivals/best-kept-secret/2026/nation-of-language.json",
+      "artist": "Nation of Language",
+      "date": "2026-06-13",
+      "rating": 7.4,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-hayley-williams",
+      "path": "festivals/best-kept-secret/2026/hayley-williams.json",
+      "artist": "Hayley Williams",
+      "date": "2026-06-13",
+      "rating": 6.8,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-weval-live",
+      "path": "festivals/best-kept-secret/2026/weval-live.json",
+      "artist": "Weval (live)",
+      "date": "2026-06-13",
+      "rating": 9.2,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "best-kept-secret-2026-hiqpy",
+      "path": "festivals/best-kept-secret/2026/hiqpy.json",
+      "artist": "Hiqpy",
+      "date": "2026-06-13",
+      "rating": 6.3,
+      "type": "festival",
+      "city": "Hilvarenbeek",
+      "festival_name": "Best Kept Secret"
+    },
+    {
+      "id": "concert-2026-tame-impala-duesseldorf",
+      "path": "concerts/2026/tame-impala-duesseldorf.json",
+      "artist": "Tame Impala",
+      "date": "2026-05-01",
+      "rating": 9.7,
+      "type": "concert",
+      "city": "Düsseldorf",
+      "festival_name": null
+    }
+  ]
+}
