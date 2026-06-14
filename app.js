@@ -47,6 +47,16 @@ const todayLineup = [
 
 const ratingLog = [
   {
+    artist: 'Job Jobse',
+    rating: 9.7,
+    shortReview: 'Absurd sterke set: totale controle, euforie en meteen de onbetwiste nieuwe dag- en festivaltopper.',
+    stage: 'Best Kept Secret 2026',
+    slot: 'Zelfde festival · tijd nog aanvullen',
+    timestamp: '2026-06-13T23:30:00+02:00',
+    fields: ['dj set', 'euforie', 'absolute topper'],
+    sourceUrl: 'https://www.bestkeptsecret.nl/'
+  },
+  {
     artist: 'Wolf Alice',
     rating: 8.4,
     shortReview: 'Sterke festival-set met genoeg punch en melodie om meteen in de bovenste regionen van je daglijst te landen.',
