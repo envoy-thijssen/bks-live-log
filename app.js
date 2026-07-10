@@ -16,6 +16,49 @@ function formatRecordLabel(record) {
   return `Concert · ${record.city}`;
 }
 
+function recordSearchText(record) {
+  return [
+    record.artist.name,
+    record.city,
+    record.festival_name || '',
+    record.date,
+    record.performance.day_label,
+    record.performance.stage,
+    record.performance.slot,
+    record.artist.origin,
+    record.artist.recognition,
+    ...(record.artist.genres || []),
+    ...(record.artist.vibes || []),
+    ...(record.performance.tags || []),
+  ].join(' ').toLowerCase();
+}
+
+function filterRecords(records, query) {
+  const q = query.trim().toLowerCase();
+  if (!q) return records;
+  return records.filter(record => recordSearchText(record).includes(q));
+}
+
+function renderCompactCard(record) {
+  return `
+    <article class="rating-card compact-card">
+      <div class="rating-top">
+        <div>
+          <span class="section-tag">${record.festival_name || record.type} · ${record.date}</span>
+          <h3>${record.artist.name}</h3>
+          <p>${record.city} · ${record.performance.day_label} · ${record.performance.slot}</p>
+        </div>
+        <div class="rating-badge ${ratingClass(record.performance.rating)}">${record.performance.rating.toFixed(1)}</div>
+      </div>
+      <p>${record.performance.review}</p>
+      <div class="chip-row">
+        <span class="rating-chip">${record.artist.recognition}</span>
+        ${record.artist.genres.slice(0, 3).map(field => `<span class="rating-chip">${field}</span>`).join('')}
+      </div>
+    </article>
+  `;
+}
+
 function groupAverages(records, valuesForRecord) {
   const buckets = new Map();
   records.forEach(record => {
@@ -150,6 +193,12 @@ function renderArchive(records) {
   `).join('');
 }
 
+function renderSearch(records, query) {
+  const results = filterRecords(records, query);
+  document.getElementById('search-status').textContent = query ? `${results.length} result${results.length === 1 ? '' : 's'} for “${query}”` : `${records.length} records searchable`; 
+  document.getElementById('search-results').innerHTML = results.length ? results.map(renderCompactCard).join('') : '<article class="glass summary-panel">No matches.</article>';
+}
+
 function renderMiniList(targetId, items, formatter) {
   document.getElementById(targetId).innerHTML = items.map(formatter).join('');
 }
@@ -243,6 +292,18 @@ async function main() {
     renderArchive(records);
     renderStats(records);
     renderJsonPreview(records);
+
+    const searchInput = document.getElementById('search-input');
+    const searchClear = document.getElementById('search-clear');
+    const runSearch = () => renderSearch(records, searchInput.value);
+
+    searchInput.addEventListener('input', runSearch);
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      runSearch();
+      searchInput.focus();
+    });
+    runSearch();
   } catch (error) {
     console.error(error);
     document.getElementById('hero-microcopy').textContent = 'Could not load archive data. Check data/index.json and static hosting paths.';

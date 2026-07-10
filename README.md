@@ -15,3 +15,7 @@ Static GitHub Pages prototype for tracking festival artists, ratings, timetable 
 
 ## Deployment
 This project is static and can be published directly with GitHub Pages from the root branch.
+
+## Open Knowledge Format
+The server-wide OKF entry for this repository is `/root/knowledge/projects/bks-live-log/index.md`.
+Durable, agent-facing project knowledge should be represented or linked from that OKF bundle while source docs and static-site files remain in this repo.

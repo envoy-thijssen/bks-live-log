@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-06-14T22:30:00+02:00",
-  "record_count": 9,
-  "festival_count": 1,
-  "city_count": 2,
-  "average_rating": 8.03,
+  "record_count": 12,
+  "festival_count": 2,
+  "city_count": 3,
+  "average_rating": 8.12,
   "records": [
     {
       "id": "best-kept-secret-2026-job-jobse",
@@ -94,6 +94,36 @@
       "type": "concert",
       "city": "Düsseldorf",
       "festival_name": null
+    },
+    {
+      "id": "slot-zeist-live-2026-ao",
+      "path": "festivals/slot-zeist-live/2026/ao.json",
+      "artist": "Ão",
+      "date": "2026-07-10",
+      "rating": 7.3,
+      "type": "festival",
+      "city": "Zeist",
+      "festival_name": "Slot Zeist Live"
+    },
+    {
+      "id": "slot-zeist-live-2026-neomi",
+      "path": "festivals/slot-zeist-live/2026/neomi.json",
+      "artist": "néomí",
+      "date": "2026-07-10",
+      "rating": 8.7,
+      "type": "festival",
+      "city": "Zeist",
+      "festival_name": "Slot Zeist Live"
+    },
+    {
+      "id": "slot-zeist-live-2026-tamino",
+      "path": "festivals/slot-zeist-live/2026/tamino.json",
+      "artist": "Tamino",
+      "date": "2026-07-10",
+      "rating": 9.1,
+      "type": "festival",
+      "city": "Zeist",
+      "festival_name": "Slot Zeist Live"
     }
   ]
 }

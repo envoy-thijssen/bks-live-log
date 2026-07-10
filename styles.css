@@ -223,6 +223,51 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.search-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.search-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(6, 11, 18, 0.72);
+  color: var(--text);
+  padding: 0 16px;
+  font: inherit;
+}
+
+.search-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-status {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.compact-card h3 {
+  font-size: 22px;
+}
+
+.compact-card p {
+  font-size: 15px;
+}
+
 .artist-card, .rating-card {
   padding: 22px;
   background: linear-gradient(180deg, rgba(14,24,35,0.9), rgba(10,18,27,0.86));

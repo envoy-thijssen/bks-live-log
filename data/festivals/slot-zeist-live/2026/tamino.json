@@ -1,0 +1,68 @@
+{
+  "path": "festivals/slot-zeist-live/2026/tamino.json",
+  "id": "slot-zeist-live-2026-tamino",
+  "type": "festival",
+  "festival_slug": "slot-zeist-live",
+  "festival_name": "Slot Zeist Live",
+  "year": 2026,
+  "date": "2026-07-10",
+  "city": "Zeist",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Tamino",
+    "slug": "tamino",
+    "description": "Belgische singer-songwriter met donkere, stemmige indierock en klassieke Arabische melodische accenten; een gelaagde livesound met veel emotionele spanning.",
+    "genres": [
+      "indie rock",
+      "singer-songwriter",
+      "alternative",
+      "art pop"
+    ],
+    "lead": "Tamino-Amir Moharam Fouad",
+    "lead_birth_year": 1996,
+    "official_site": "https://www.taminoamir.com/",
+    "origin": "Antwerp, Belgium",
+    "vibes": [
+      "mysterieus",
+      "gelaagd",
+      "intiem",
+      "episch"
+    ],
+    "recognition": "headliner",
+    "source_urls": [
+      "https://slotzeistlive.nl/agenda/act/tamino/",
+      "https://www.taminoamir.com/"
+    ]
+  },
+  "performance": {
+    "stage": "Slot Zeist Live 2026",
+    "slot": "Vrijdag 10 juli · 21:00 – 22:30",
+    "timestamp": "2026-07-10T21:00:00+02:00",
+    "seen": true,
+    "rating": 9.1,
+    "review": "Sterke, hypnotische headliner-set met veel emotie en een bijzonder gelaagde opbouw.",
+    "weather": null,
+    "tags": [
+      "headliner",
+      "hypnotisch",
+      "sterk"
+    ],
+    "day_label": "Friday"
+  },
+  "links": {
+    "festival_page": "https://slotzeistlive.nl/agenda/act/tamino/",
+    "official_site": "https://www.taminoamir.com/"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Slot Zeist Live artist page",
+      "url": "https://slotzeistlive.nl/agenda/act/tamino/"
+    },
+    {
+      "type": "official-site",
+      "label": "Tamino official site",
+      "url": "https://www.taminoamir.com/"
+    }
+  ]
+}

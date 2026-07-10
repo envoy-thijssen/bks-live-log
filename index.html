@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Live Music Archive — Festival & Concert Memory System</title>
-  <meta name="description" content="Static live music archive for festival appearances and concerts, with enriched artist metadata and music-snob statistics." />
+  <title>Festival Atlas — Live show archive</title>
+  <meta name="description" content="Searchable archive of festival appearances and concerts, with enriched artist metadata, ratings, and taste analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,11 +15,12 @@
     <header class="hero">
       <div class="hero-copy">
         <div class="eyebrow">Festival + concert archive · static GitHub Pages build</div>
-        <h1>Live Music Archive</h1>
-        <p class="lede">A durable music memory system: one JSON file per performance, embedded artist context that survives annual festival-site overwrites, and enough taste analytics to satisfy a proper music snob.</p>
+        <h1>Festival Atlas</h1>
+        <p class="lede">A searchable music memory system: one JSON file per performance, embedded artist context that survives annual festival-site overwrites, and enough taste analytics to satisfy a proper music snob.</p>
         <div class="hero-actions">
           <a class="button primary" href="#latest-festival">Latest festival</a>
           <a class="button ghost" href="#archive">Archive</a>
+          <a class="button ghost" href="#search">Search</a>
           <a class="button ghost" href="#snob-stats">Snob stats</a>
         </div>
       </div>
@@ -87,6 +88,25 @@
         </div>
         <div id="ratings-spotlight" class="spotlight-panel glass"></div>
         <div id="ratings-grid" class="ratings-grid"></div>
+      </section>
+
+      <section id="search" class="section section-grid">
+        <div class="section-heading">
+          <div>
+            <span class="section-tag">Search</span>
+            <h2>Find artist, city, festival, or day</h2>
+          </div>
+          <div class="weather-pill">Instant filter across the full archive</div>
+        </div>
+        <article class="glass summary-panel search-panel">
+          <label class="search-label" for="search-input">Search archive</label>
+          <input id="search-input" class="search-input" type="search" placeholder="Try: Tamino, Zeist, Friday, headliner, rising…" />
+          <div class="search-actions">
+            <button class="button ghost" id="search-clear" type="button">Clear</button>
+            <div class="search-status" id="search-status">Loading…</div>
+          </div>
+        </article>
+        <div id="search-results" class="ratings-grid"></div>
       </section>
 
       <section id="snob-stats" class="section section-grid">

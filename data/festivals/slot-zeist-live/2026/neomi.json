@@ -1,0 +1,61 @@
+{
+  "path": "festivals/slot-zeist-live/2026/neomi.json",
+  "id": "slot-zeist-live-2026-neomi",
+  "type": "festival",
+  "festival_slug": "slot-zeist-live",
+  "festival_name": "Slot Zeist Live",
+  "year": 2026,
+  "date": "2026-07-10",
+  "city": "Zeist",
+  "country": "Netherlands",
+  "artist": {
+    "name": "néomí",
+    "slug": "neomi",
+    "description": "Nederlands-Surinaamse singer-songwriter met een fijne mix van folk, pop en stille intensiteit; breekbaar maar krachtig.",
+    "genres": [
+      "folk",
+      "pop",
+      "singer-songwriter",
+      "indie"
+    ],
+    "lead": "néomí",
+    "lead_birth_year": null,
+    "official_site": null,
+    "origin": "Netherlands / Suriname",
+    "vibes": [
+      "breekbaar",
+      "openhartig",
+      "intiem",
+      "krachtig"
+    ],
+    "recognition": "rising",
+    "source_urls": [
+      "https://slotzeistlive.nl/agenda/act/tamino/"
+    ]
+  },
+  "performance": {
+    "stage": "Slot Zeist Live 2026",
+    "slot": "Vrijdag 10 juli · 19:30 – 20:15",
+    "timestamp": "2026-07-10T19:30:00+02:00",
+    "seen": true,
+    "rating": 8.7,
+    "review": "Mooie, gevoelige set met veel helderheid en emotionele diepgang.",
+    "weather": null,
+    "tags": [
+      "support",
+      "gevoelig",
+      "sterk"
+    ],
+    "day_label": "Friday"
+  },
+  "links": {
+    "festival_page": "https://slotzeistlive.nl/agenda/act/tamino/"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Slot Zeist Live artist page",
+      "url": "https://slotzeistlive.nl/agenda/act/tamino/"
+    }
+  ]
+}

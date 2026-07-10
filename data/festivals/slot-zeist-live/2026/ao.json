@@ -1,0 +1,61 @@
+{
+  "path": "festivals/slot-zeist-live/2026/ao.json",
+  "id": "slot-zeist-live-2026-ao",
+  "type": "festival",
+  "festival_slug": "slot-zeist-live",
+  "festival_name": "Slot Zeist Live",
+  "year": 2026,
+  "date": "2026-07-10",
+  "city": "Zeist",
+  "country": "Netherlands",
+  "artist": {
+    "name": "Ão",
+    "slug": "ao",
+    "description": "Belgische band met een unieke mix van elektronica, artpop, saudade en alternatieve Latin-rock; warm, kleurrijk en grensvervagend live.",
+    "genres": [
+      "electronic",
+      "art pop",
+      "latin rock",
+      "alternative"
+    ],
+    "lead": "Brenda Corijn",
+    "lead_birth_year": null,
+    "official_site": null,
+    "origin": "Belgium",
+    "vibes": [
+      "hypnotisch",
+      "warm",
+      "dansbaar",
+      "grensvervagend"
+    ],
+    "recognition": "rising",
+    "source_urls": [
+      "https://slotzeistlive.nl/agenda/act/tamino/"
+    ]
+  },
+  "performance": {
+    "stage": "Slot Zeist Live 2026",
+    "slot": "Vrijdag 10 juli · 18:30 – 19:15",
+    "timestamp": "2026-07-10T18:30:00+02:00",
+    "seen": true,
+    "rating": 7.3,
+    "review": "Sterke, sfeervolle opener met veel kleur en een fijne mix van elektronica en intimiteit.",
+    "weather": null,
+    "tags": [
+      "support",
+      "sfeervol",
+      "sterk"
+    ],
+    "day_label": "Friday"
+  },
+  "links": {
+    "festival_page": "https://slotzeistlive.nl/agenda/act/tamino/"
+  },
+  "sources": [
+    {
+      "type": "festival",
+      "label": "Slot Zeist Live artist page",
+      "url": "https://slotzeistlive.nl/agenda/act/tamino/"
+    }
+  ]
+}
